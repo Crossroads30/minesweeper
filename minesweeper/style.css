@@ -1,0 +1,253 @@
+* {
+   box-sizing: border-box
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+.conteiner {
+   display: flex;
+   width: 100%;
+   /* min-width: 650px; */
+   min-height: 100vh;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 20px;
+   align-items: center;
+   background: linear-gradient(to bottom, blue, #ccc);
+}
+
+.title {
+   color: violet;
+   font-size: 50px;
+   margin: 10px 0 15px;
+}
+
+.timer {
+   margin-bottom: 20px;
+}
+
+.timer span {
+   color: violet;
+   padding: 0 40px;
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.request {
+   color: violet;
+   font-size: 25px;
+   font-weight: 700;
+   margin: 20px 0 40px;
+}
+
+.level-switcher {
+   display: flex;
+   width: 200px;
+   height: 200px;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   color: violet;
+   font-size: 25px;
+   margin: 0 0 0 100px;
+   transition: all .5s;
+}
+
+.switcher-level {
+   margin-right: 20px;
+}
+
+.playing-field {
+   display: grid;
+   /* margin: 0 auto; */
+   /* min-width: 400px;
+   min-height: 400px; */
+   background: silver;
+   border: 5px solid rgb(131, 4, 137);
+   /* grid-template-columns: repeat(10, 60px);
+   grid-template-rows: repeat(10, 60px); */
+}
+
+.cell {
+   display: flex;
+   /* width: 50px;
+   height: 50px; */
+   background: linear-gradient(to bottom, #a2a2a2, #ccc);
+   border: 1px solid blueviolet;
+   align-items: center;
+   justify-content: center;
+   font-size: 45px;
+   cursor: pointer;
+}
+
+.cell:hover {
+   background: linear-gradient(to bottom, #a286b3, #ccc);
+}
+
+.cell-clicked {
+   background: grey;
+   pointer-events: none;
+}
+
+.n1 {
+   color: blue;
+}
+
+.n2 {
+   color: green;
+}
+
+.n3 {
+   color: yellow;
+}
+
+.n4 {
+   color: red;
+}
+
+.n5 {
+   color: orange;
+}
+
+.n6 {
+   color: black;
+}
+
+.n7 {
+   color: aqua;
+}
+
+.n8 {
+   color: hotpink;
+}
+
+.mines-count {
+   color: violet;
+   margin: 10px 0;
+}
+
+.win-message {
+   margin-bottom: 10px;
+}
+
+.game-button {
+   width: 100px;
+   height: 30px;
+   color: blueviolet;
+   border-radius: 50px;
+   border: 2px solid blueviolet;
+   background: linear-gradient(to bottom, #a2a2a2, #ccc);
+   cursor: pointer;
+   margin-top: 10px;
+}
+
+.game-button:hover {
+   background: linear-gradient(to bottom, #a286b3, #ccc);
+}
+
+.field-size {
+   color: violet;
+   font-size: 20px;
+   margin-bottom: 5px;
+}
+
+.win-message {
+   width: 750px;
+   margin: 20px 0 0;
+   color: blueviolet;
+   font-size: 24px;
+   font-weight: 700;
+}
+
+/* @media (max-width: 1280px) {
+
+   .conteiner {
+      padding: 2% 10px;
+      min-width: 500px;
+   }
+
+   .title {
+      font-size: 35px;
+      margin: 10px 0 0;
+   }
+
+   .playing-field {
+      grid-template-columns: repeat(10, 45px);
+      grid-template-rows: repeat(10, 45px);
+   }
+
+   .cell {
+      width: 45px;
+      height: 45px;
+      font-size: 25px;
+   }
+
+   .timer {
+      margin: 15px 0;
+   }
+
+   .timer span {
+      font-size: 20px;
+      padding: 0 20px;
+   }
+
+   .mines-count {
+      margin: 5px 0;
+      font-size: 20px;
+   }
+
+   .win-message {
+      margin-bottom: 0;
+      width: 550px;
+      font-size: 17px;
+   }
+
+}
+
+@media (max-width: 560px) {
+
+   .conteiner {
+      padding: 20% 0;
+      min-width: 320px;
+   }
+
+   .title {
+      font-size: 25px;
+   }
+
+   .playing-field {
+      grid-template-columns: repeat(10, 25px);
+      grid-template-rows: repeat(10, 25px);
+   }
+
+   .cell {
+      width: 25px;
+      height: 25px;
+      font-size: 17px;
+   }
+
+   .timer {
+      margin: 8px 0 10px;
+   }
+
+   .timer span {
+      font-size: 17px;
+      padding: 0 12px;
+   }
+
+   .mines-count {
+      font-size: 17px;
+      margin: 10px 0 7px;
+   }
+
+   .win-message {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      width: 320px;
+   }
+
+} */
